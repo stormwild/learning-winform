@@ -1,10 +1,10 @@
-# Learn WinForm
+# Learning Windows Forms
 
-Sample projects for learning about Winforms.
+Sample projects for learning about Windows Forms (WinForms).
 
 ## Sample
 
-Code based WinForm creation
+Code based Windows Forms creation.
 
 ## References
 
