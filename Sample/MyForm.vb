@@ -5,7 +5,7 @@ Public Class MyForm
 
     Private MessageTextbox As TextBox
     Private MessageLabel As Label
-    Private ShowMessageButton As Button
+    Private WithEvents ShowMessageButton As Button
 
     Public Sub New()
         Me.Text = "MyForm"
@@ -28,5 +28,10 @@ Public Class MyForm
         MessageLabel.Top = 125
         MessageLabel.Text = "[Label]"
         Me.Controls.Add(MessageLabel)
+    End Sub
+
+    Private Sub ShowMessageHandler(sender As Object, e As EventArgs) Handles ShowMessageButton.Click
+        MessageLabel.Text = MessageTextbox.Text
+        MsgBox("Button Clicked")
     End Sub
 End Class
