@@ -32,6 +32,23 @@ Activated fires when form gains focus and Deactivated fires when it loses focus.
 
 Closing fires just before the form is closed and Closed fires after the form is closed.
 
+## Custom Dialogs
+
+1. Create a form 
+2. Set form properties to add dialog look, feel and behavior
+
+- Set FormBorderStyle to FixedDialog
+- Set ControlBox property to false
+- Set AcceptButton and CancelButton button properties
+
+3. Set dialog return value on button clicks
+
+Setting the DialogResult property closes the dialo
+
+
+
+
+
 ## References
 
 - [Introduction to Windows Forms](https://app.pluralsight.com/library/courses/windows-forms-introduction-with-visual-basic/table-of-contents)
