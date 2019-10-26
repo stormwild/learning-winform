@@ -104,6 +104,12 @@ Third-party
 - DevExpress [The Ribbon UI](https://docs.devexpress.com/WindowsForms/118333/Controls-and-Libraries/Ribbon-Bars-and-Menu/Ribbon/The-Ribbon-UI)
 - many others
 
+## UserControls
+
+- Composite control - a control made up of other controls
+- Building a user control is similar to building a form
+- Enables consolidation of common UI
+- Can only be used in the project where it is defined
 
 
 ## References

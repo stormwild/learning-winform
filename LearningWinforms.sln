@@ -20,6 +20,8 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Dialog", "Dialog\Dialog.vbp
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "MenuToolbarsSample", "MenuToolbarsSample\MenuToolbarsSample.vbproj", "{25D4ADAE-DB95-4F2E-B484-B539400877DE}"
 EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "UserControlsSample", "UserControls\UserControlsSample.vbproj", "{335B8152-352D-4896-84F1-5CCD7799B7DA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -50,6 +52,10 @@ Global
 		{25D4ADAE-DB95-4F2E-B484-B539400877DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{25D4ADAE-DB95-4F2E-B484-B539400877DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{25D4ADAE-DB95-4F2E-B484-B539400877DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{335B8152-352D-4896-84F1-5CCD7799B7DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{335B8152-352D-4896-84F1-5CCD7799B7DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{335B8152-352D-4896-84F1-5CCD7799B7DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{335B8152-352D-4896-84F1-5CCD7799B7DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
