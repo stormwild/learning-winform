@@ -111,6 +111,21 @@ Third-party
 - Enables consolidation of common UI
 - Can only be used in the project where it is defined
 
+## Application Layouts
+
+### MDI Applications
+
+Main Form
+
+- Set IsMdiContainer to True
+- Use ActiveMdiChild to get reference to active child form
+- Use MdiChildren to get collection of child forms
+- Use LayoutMdi to arrange child forms
+
+Child Forms
+
+- Set MdiParent to main form on creation
+- Use MdiParent to get a reference back to the main form
 
 ## References
 
