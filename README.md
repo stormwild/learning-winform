@@ -43,7 +43,7 @@ Closing fires just before the form is closed and Closed fires after the form is 
 
 3. Set dialog return value on button clicks
 
-Setting the DialogResult property closes the dialo
+Setting the DialogResult property closes the dialog
 
 
 
