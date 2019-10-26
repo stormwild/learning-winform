@@ -45,7 +45,64 @@ Closing fires just before the form is closed and Closed fires after the form is 
 
 Setting the DialogResult property closes the dialog
 
+## Menus
 
+- MenuStrip and ToolStripMenuItem controls
+- Designer supports inline editing
+- Key ToolStripMenuItem properties
+
+Text
+
+- Can prefix/preface(?) one character with ampersand (&)
+- Makes this the quick key
+- Can open/select item using alt key
+
+Image
+
+- Get images from [Visual Studio Image Library](https://www.microsoft.com/en-us/download/details.aspx?id=35825)
+- As of Visual Studio 2012 the images are a separate download
+
+ShortCutKeys
+
+Common shortcut and quick key combinations
+
+```
+New		Ctrl + N	Alt + N 
+Open	Ctrl + O	Alt + O
+Save	Ctrl + S	Alt + S
+Save As				Alt + S
+Print	Ctrl + P	Alt + P
+Undo	Ctrl + Z	Alt + U
+Redo	Ctrl + Y	Alt + R
+Cut		Ctrl + X	Alt + T
+Copy	Ctrl + C	Alt + C
+Paste	Ctrl + V	Alt + P
+```
+
+## Toolbars
+
+- ToolStrip control
+- Can contain several several types of items
+- Button, Label, TexBox, ComboBox, ProgressBar
+- Controls on toolstrip are wrappers around common controls
+- Example ToolStripComboBox is a wrapper around a ComboBox
+- Tool strip controls surface many of properties/events of the wrapped control, but not all
+- Can get access to the wrapped control
+
+## Ribbon
+
+Windows Forms do not include Ribbon controls
+
+Windows Ribbon for WinForms 
+
+- [RibbonWinForms](https://github.com/RibbonWinForms/RibbonWinForms) - opensource
+
+Third-party
+
+- Syncfusion [Microsoft Office-inspired WinForms Ribbon control](https://www.syncfusion.com/winforms-ui-controls/ribbon)
+- Progress Telerik UI for WinForms [RibbonBar](https://www.telerik.com/products/winforms/ribbonbar.aspx)
+- DevExpress [The Ribbon UI](https://docs.devexpress.com/WindowsForms/118333/Controls-and-Libraries/Ribbon-Bars-and-Menu/Ribbon/The-Ribbon-UI)
+- many others
 
 
 
