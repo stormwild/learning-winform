@@ -1,6 +1,6 @@
 ﻿Public Class Main
     Private _counter As Integer = 0
-    Private Sub NewToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NewToolStripMenuItem.Click
+    Private Sub NewToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NewToolStripMenuItem.Click, NewToolStripButton.Click
         Dim childForm = New ChildForm()
         childForm.MdiParent = Me
         _counter += 1
@@ -34,21 +34,21 @@
         End If
     End Sub
 
-    Private Sub CutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CutToolStripMenuItem.Click
+    Private Sub CutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CutToolStripMenuItem.Click, CutToolStripButton.Click
         If Me.ActiveMdiChild IsNot Nothing Then
             Dim childForm = CType(Me.ActiveMdiChild, ChildForm)
             childForm.DocumentRichTextBox.Cut()
         End If
     End Sub
 
-    Private Sub CopyToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CopyToolStripMenuItem.Click
+    Private Sub CopyToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CopyToolStripMenuItem.Click, CopyToolStripButton.Click
         If Me.ActiveMdiChild IsNot Nothing Then
             Dim childForm = CType(Me.ActiveMdiChild, ChildForm)
             childForm.DocumentRichTextBox.Copy()
         End If
     End Sub
 
-    Private Sub PasteToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PasteToolStripMenuItem.Click
+    Private Sub PasteToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PasteToolStripMenuItem.Click, PasteToolStripButton.Click
         If Me.ActiveMdiChild IsNot Nothing Then
             Dim childForm = CType(Me.ActiveMdiChild, ChildForm)
             childForm.DocumentRichTextBox.Paste()
@@ -72,7 +72,7 @@
         Me.Close()
     End Sub
 
-    Private Sub SaveToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SaveToolStripMenuItem.Click
+    Private Sub SaveToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SaveToolStripMenuItem.Click, SaveToolStripButton.Click
         If Me.ActiveMdiChild IsNot Nothing Then
             Dim childForm = CType(Me.ActiveMdiChild, ChildForm)
             Dim dialog As New SaveFileDialog()
@@ -87,7 +87,7 @@
         End If
     End Sub
 
-    Private Sub OpenToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OpenToolStripMenuItem.Click
+    Private Sub OpenToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OpenToolStripMenuItem.Click, OpenToolStripButton.Click
         Dim dialog As New OpenFileDialog()
         dialog.Filter = "Rich text files|*.rtf"
         Dim result = dialog.ShowDialog()
