@@ -1,7 +1,10 @@
 ﻿Public Class Main
+    Private _counter As Integer = 0
     Private Sub NewToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NewToolStripMenuItem.Click
         Dim childForm = New ChildForm()
         childForm.MdiParent = Me
+        _counter += 1
+        childForm.Text = "New Document " & _counter
         childForm.Show()
     End Sub
 
@@ -56,6 +59,44 @@
         If Me.ActiveMdiChild IsNot Nothing Then
             Dim childForm = CType(Me.ActiveMdiChild, ChildForm)
             childForm.DocumentRichTextBox.SelectAll()
+        End If
+    End Sub
+
+    Private Sub CloseToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CloseToolStripMenuItem.Click
+        If Me.ActiveMdiChild IsNot Nothing Then
+            Me.ActiveMdiChild.Close()
+        End If
+    End Sub
+
+    Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click
+        Me.Close()
+    End Sub
+
+    Private Sub SaveToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SaveToolStripMenuItem.Click
+        If Me.ActiveMdiChild IsNot Nothing Then
+            Dim childForm = CType(Me.ActiveMdiChild, ChildForm)
+            Dim dialog As New SaveFileDialog()
+            dialog.Filter = "Rich text files|*.rtf"
+            dialog.AddExtension = True
+            Dim result = dialog.ShowDialog()
+
+            If result = DialogResult.OK Then
+                childForm.DocumentRichTextBox.SaveFile(dialog.FileName)
+                childForm.Text = dialog.FileName
+            End If
+        End If
+    End Sub
+
+    Private Sub OpenToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OpenToolStripMenuItem.Click
+        Dim dialog As New OpenFileDialog()
+        dialog.Filter = "Rich text files|*.rtf"
+        Dim result = dialog.ShowDialog()
+        If result = DialogResult.OK Then
+            Dim childForm As New ChildForm()
+            childForm.DocumentRichTextBox.LoadFile(dialog.FileName)
+            childForm.Text = dialog.FileName
+            childForm.MdiParent = Me
+            childForm.Show()
         End If
     End Sub
 End Class

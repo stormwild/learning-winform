@@ -30,7 +30,7 @@ Partial Class ChildForm
         Me.DocumentRichTextBox.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DocumentRichTextBox.Location = New System.Drawing.Point(0, 0)
         Me.DocumentRichTextBox.Name = "DocumentRichTextBox"
-        Me.DocumentRichTextBox.Size = New System.Drawing.Size(463, 450)
+        Me.DocumentRichTextBox.Size = New System.Drawing.Size(317, 276)
         Me.DocumentRichTextBox.TabIndex = 0
         Me.DocumentRichTextBox.Text = ""
         '
@@ -38,7 +38,7 @@ Partial Class ChildForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(463, 450)
+        Me.ClientSize = New System.Drawing.Size(317, 276)
         Me.Controls.Add(Me.DocumentRichTextBox)
         Me.Name = "ChildForm"
         Me.Text = "New Document"

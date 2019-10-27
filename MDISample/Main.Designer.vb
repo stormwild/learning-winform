@@ -48,6 +48,7 @@ Partial Class Main
         Me.CascadeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.TileHorizontallyToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.TileVerticallyToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CloseToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -57,13 +58,13 @@ Partial Class Main
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.MdiWindowListItem = Me.WindowToolStripMenuItem
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(658, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(856, 24)
         Me.MenuStrip1.TabIndex = 1
         Me.MenuStrip1.Text = "MenuStrip1"
         '
         'FileToolStripMenuItem
         '
-        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NewToolStripMenuItem, Me.OpenToolStripMenuItem, Me.toolStripSeparator, Me.SaveToolStripMenuItem, Me.SaveAsToolStripMenuItem, Me.toolStripSeparator1, Me.PrintToolStripMenuItem, Me.PrintPreviewToolStripMenuItem, Me.toolStripSeparator2, Me.ExitToolStripMenuItem})
+        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NewToolStripMenuItem, Me.OpenToolStripMenuItem, Me.CloseToolStripMenuItem, Me.toolStripSeparator, Me.SaveToolStripMenuItem, Me.SaveAsToolStripMenuItem, Me.toolStripSeparator1, Me.PrintToolStripMenuItem, Me.PrintPreviewToolStripMenuItem, Me.toolStripSeparator2, Me.ExitToolStripMenuItem})
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
         Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "&File"
@@ -74,7 +75,7 @@ Partial Class Main
         Me.NewToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.NewToolStripMenuItem.Name = "NewToolStripMenuItem"
         Me.NewToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.N), System.Windows.Forms.Keys)
-        Me.NewToolStripMenuItem.Size = New System.Drawing.Size(146, 22)
+        Me.NewToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.NewToolStripMenuItem.Text = "&New"
         '
         'OpenToolStripMenuItem
@@ -83,13 +84,13 @@ Partial Class Main
         Me.OpenToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.OpenToolStripMenuItem.Name = "OpenToolStripMenuItem"
         Me.OpenToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.O), System.Windows.Forms.Keys)
-        Me.OpenToolStripMenuItem.Size = New System.Drawing.Size(146, 22)
+        Me.OpenToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.OpenToolStripMenuItem.Text = "&Open"
         '
         'toolStripSeparator
         '
         Me.toolStripSeparator.Name = "toolStripSeparator"
-        Me.toolStripSeparator.Size = New System.Drawing.Size(143, 6)
+        Me.toolStripSeparator.Size = New System.Drawing.Size(177, 6)
         '
         'SaveToolStripMenuItem
         '
@@ -97,19 +98,19 @@ Partial Class Main
         Me.SaveToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.SaveToolStripMenuItem.Name = "SaveToolStripMenuItem"
         Me.SaveToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.S), System.Windows.Forms.Keys)
-        Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(146, 22)
+        Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.SaveToolStripMenuItem.Text = "&Save"
         '
         'SaveAsToolStripMenuItem
         '
         Me.SaveAsToolStripMenuItem.Name = "SaveAsToolStripMenuItem"
-        Me.SaveAsToolStripMenuItem.Size = New System.Drawing.Size(146, 22)
+        Me.SaveAsToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.SaveAsToolStripMenuItem.Text = "Save &As"
         '
         'toolStripSeparator1
         '
         Me.toolStripSeparator1.Name = "toolStripSeparator1"
-        Me.toolStripSeparator1.Size = New System.Drawing.Size(143, 6)
+        Me.toolStripSeparator1.Size = New System.Drawing.Size(177, 6)
         '
         'PrintToolStripMenuItem
         '
@@ -117,7 +118,7 @@ Partial Class Main
         Me.PrintToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.PrintToolStripMenuItem.Name = "PrintToolStripMenuItem"
         Me.PrintToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.P), System.Windows.Forms.Keys)
-        Me.PrintToolStripMenuItem.Size = New System.Drawing.Size(146, 22)
+        Me.PrintToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.PrintToolStripMenuItem.Text = "&Print"
         '
         'PrintPreviewToolStripMenuItem
@@ -125,18 +126,18 @@ Partial Class Main
         Me.PrintPreviewToolStripMenuItem.Image = CType(resources.GetObject("PrintPreviewToolStripMenuItem.Image"), System.Drawing.Image)
         Me.PrintPreviewToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.PrintPreviewToolStripMenuItem.Name = "PrintPreviewToolStripMenuItem"
-        Me.PrintPreviewToolStripMenuItem.Size = New System.Drawing.Size(146, 22)
+        Me.PrintPreviewToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.PrintPreviewToolStripMenuItem.Text = "Print Pre&view"
         '
         'toolStripSeparator2
         '
         Me.toolStripSeparator2.Name = "toolStripSeparator2"
-        Me.toolStripSeparator2.Size = New System.Drawing.Size(143, 6)
+        Me.toolStripSeparator2.Size = New System.Drawing.Size(177, 6)
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(146, 22)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.ExitToolStripMenuItem.Text = "E&xit"
         '
         'EditToolStripMenuItem
@@ -150,14 +151,14 @@ Partial Class Main
         '
         Me.UndoToolStripMenuItem.Name = "UndoToolStripMenuItem"
         Me.UndoToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.Z), System.Windows.Forms.Keys)
-        Me.UndoToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.UndoToolStripMenuItem.Size = New System.Drawing.Size(144, 22)
         Me.UndoToolStripMenuItem.Text = "&Undo"
         '
         'RedoToolStripMenuItem
         '
         Me.RedoToolStripMenuItem.Name = "RedoToolStripMenuItem"
         Me.RedoToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.Y), System.Windows.Forms.Keys)
-        Me.RedoToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.RedoToolStripMenuItem.Size = New System.Drawing.Size(144, 22)
         Me.RedoToolStripMenuItem.Text = "&Redo"
         '
         'toolStripSeparator3
@@ -171,7 +172,7 @@ Partial Class Main
         Me.CutToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.CutToolStripMenuItem.Name = "CutToolStripMenuItem"
         Me.CutToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.X), System.Windows.Forms.Keys)
-        Me.CutToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.CutToolStripMenuItem.Size = New System.Drawing.Size(144, 22)
         Me.CutToolStripMenuItem.Text = "Cu&t"
         '
         'CopyToolStripMenuItem
@@ -180,7 +181,7 @@ Partial Class Main
         Me.CopyToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.CopyToolStripMenuItem.Name = "CopyToolStripMenuItem"
         Me.CopyToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.C), System.Windows.Forms.Keys)
-        Me.CopyToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.CopyToolStripMenuItem.Size = New System.Drawing.Size(144, 22)
         Me.CopyToolStripMenuItem.Text = "&Copy"
         '
         'PasteToolStripMenuItem
@@ -189,7 +190,7 @@ Partial Class Main
         Me.PasteToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.PasteToolStripMenuItem.Name = "PasteToolStripMenuItem"
         Me.PasteToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.V), System.Windows.Forms.Keys)
-        Me.PasteToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.PasteToolStripMenuItem.Size = New System.Drawing.Size(144, 22)
         Me.PasteToolStripMenuItem.Text = "&Paste"
         '
         'toolStripSeparator4
@@ -200,7 +201,7 @@ Partial Class Main
         'SelectAllToolStripMenuItem
         '
         Me.SelectAllToolStripMenuItem.Name = "SelectAllToolStripMenuItem"
-        Me.SelectAllToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.SelectAllToolStripMenuItem.Size = New System.Drawing.Size(144, 22)
         Me.SelectAllToolStripMenuItem.Text = "Select &All"
         '
         'WindowToolStripMenuItem
@@ -213,26 +214,33 @@ Partial Class Main
         'CascadeToolStripMenuItem
         '
         Me.CascadeToolStripMenuItem.Name = "CascadeToolStripMenuItem"
-        Me.CascadeToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.CascadeToolStripMenuItem.Size = New System.Drawing.Size(160, 22)
         Me.CascadeToolStripMenuItem.Text = "&Cascade"
         '
         'TileHorizontallyToolStripMenuItem
         '
         Me.TileHorizontallyToolStripMenuItem.Name = "TileHorizontallyToolStripMenuItem"
-        Me.TileHorizontallyToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.TileHorizontallyToolStripMenuItem.Size = New System.Drawing.Size(160, 22)
         Me.TileHorizontallyToolStripMenuItem.Text = "Tile &Horizontally"
         '
         'TileVerticallyToolStripMenuItem
         '
         Me.TileVerticallyToolStripMenuItem.Name = "TileVerticallyToolStripMenuItem"
-        Me.TileVerticallyToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.TileVerticallyToolStripMenuItem.Size = New System.Drawing.Size(160, 22)
         Me.TileVerticallyToolStripMenuItem.Text = "Tile &Vertically"
+        '
+        'CloseToolStripMenuItem
+        '
+        Me.CloseToolStripMenuItem.Name = "CloseToolStripMenuItem"
+        Me.CloseToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.W), System.Windows.Forms.Keys)
+        Me.CloseToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.CloseToolStripMenuItem.Text = "&Close"
         '
         'Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(658, 450)
+        Me.ClientSize = New System.Drawing.Size(856, 577)
         Me.Controls.Add(Me.MenuStrip1)
         Me.IsMdiContainer = True
         Me.MainMenuStrip = Me.MenuStrip1
@@ -270,4 +278,5 @@ Partial Class Main
     Friend WithEvents CascadeToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents TileHorizontallyToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents TileVerticallyToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents CloseToolStripMenuItem As ToolStripMenuItem
 End Class
