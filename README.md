@@ -127,6 +127,20 @@ Child Forms
 - Set MdiParent to main form on creation
 - Use MdiParent to get a reference back to the main form
 
+### SDI Application
+
+- Like MDI without the main form
+- Single instance application
+- Trying to run a second instance adds a new form to the running instance
+- Application terminates when the last form is closed
+- Configured using the Application Framework
+
+The Application Framework is part of Visual Basic. 
+
+We can still use this in C# by deriving from WindosFormsApplicationBase although without Visual Studio integration.
+
+
+
 ## References
 
 - [Introduction to Windows Forms](https://app.pluralsight.com/library/courses/windows-forms-introduction-with-visual-basic/table-of-contents)
