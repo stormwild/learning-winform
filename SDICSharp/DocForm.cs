@@ -32,7 +32,29 @@ namespace SDICSharp
 
         private void WindowToolStripMenuItem_DropDownOpening(object sender, EventArgs e)
         {
+            if (WindowToolStripMenuItem.DropDownItems.Count > 0)
+            {
+                WindowToolStripMenuItem.DropDown.Dispose();
+            }
 
+            WindowToolStripMenuItem.DropDown = new ToolStripDropDown();
+            foreach (Form openForm in SdiApplication.Instance.OpenForms)
+            {
+                var childItem = new ToolStripMenuItem
+                {
+                    Text = openForm.Text,
+                    Tag = openForm
+                };
+                WindowToolStripMenuItem.DropDownItems.Add(childItem);
+                childItem.Click += OnWindowMenuItemClick;
+            }
+        }
+
+        private void OnWindowMenuItemClick(object sender, EventArgs e)
+        {
+            var menuItem = (ToolStripMenuItem)sender;
+            var form = menuItem.Tag as Form;
+            form.Activate();
         }
     }
 }
