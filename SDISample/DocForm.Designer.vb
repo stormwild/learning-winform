@@ -47,9 +47,6 @@ Partial Class DocForm
         Me.toolStripSeparator4 = New System.Windows.Forms.ToolStripSeparator()
         Me.SelectAllToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.WindowToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.CascadeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.TileHorizontallyToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.TileVerticallyToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
         Me.NewToolStripButton = New System.Windows.Forms.ToolStripButton()
         Me.OpenToolStripButton = New System.Windows.Forms.ToolStripButton()
@@ -227,28 +224,9 @@ Partial Class DocForm
         '
         'WindowToolStripMenuItem
         '
-        Me.WindowToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CascadeToolStripMenuItem, Me.TileHorizontallyToolStripMenuItem, Me.TileVerticallyToolStripMenuItem})
         Me.WindowToolStripMenuItem.Name = "WindowToolStripMenuItem"
         Me.WindowToolStripMenuItem.Size = New System.Drawing.Size(63, 20)
         Me.WindowToolStripMenuItem.Text = "&Window"
-        '
-        'CascadeToolStripMenuItem
-        '
-        Me.CascadeToolStripMenuItem.Name = "CascadeToolStripMenuItem"
-        Me.CascadeToolStripMenuItem.Size = New System.Drawing.Size(160, 22)
-        Me.CascadeToolStripMenuItem.Text = "&Cascade"
-        '
-        'TileHorizontallyToolStripMenuItem
-        '
-        Me.TileHorizontallyToolStripMenuItem.Name = "TileHorizontallyToolStripMenuItem"
-        Me.TileHorizontallyToolStripMenuItem.Size = New System.Drawing.Size(160, 22)
-        Me.TileHorizontallyToolStripMenuItem.Text = "Tile &Horizontally"
-        '
-        'TileVerticallyToolStripMenuItem
-        '
-        Me.TileVerticallyToolStripMenuItem.Name = "TileVerticallyToolStripMenuItem"
-        Me.TileVerticallyToolStripMenuItem.Size = New System.Drawing.Size(160, 22)
-        Me.TileVerticallyToolStripMenuItem.Text = "Tile &Vertically"
         '
         'ToolStrip1
         '
@@ -393,9 +371,6 @@ Partial Class DocForm
     Friend WithEvents toolStripSeparator4 As ToolStripSeparator
     Friend WithEvents SelectAllToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents WindowToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents CascadeToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents TileHorizontallyToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents TileVerticallyToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ToolStrip1 As ToolStrip
     Friend WithEvents NewToolStripButton As ToolStripButton
     Friend WithEvents OpenToolStripButton As ToolStripButton

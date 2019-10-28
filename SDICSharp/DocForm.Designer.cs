@@ -52,9 +52,6 @@
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.SelectAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.WindowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.CascadeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.TileHorizontallyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.TileVerticallyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStrip1 = new System.Windows.Forms.ToolStrip();
             this.NewToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.OpenToolStripButton = new System.Windows.Forms.ToolStripButton();
@@ -254,31 +251,10 @@
             // 
             // WindowToolStripMenuItem
             // 
-            this.WindowToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.CascadeToolStripMenuItem,
-            this.TileHorizontallyToolStripMenuItem,
-            this.TileVerticallyToolStripMenuItem});
             this.WindowToolStripMenuItem.Name = "WindowToolStripMenuItem";
             this.WindowToolStripMenuItem.Size = new System.Drawing.Size(63, 20);
             this.WindowToolStripMenuItem.Text = "&Window";
-            // 
-            // CascadeToolStripMenuItem
-            // 
-            this.CascadeToolStripMenuItem.Name = "CascadeToolStripMenuItem";
-            this.CascadeToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
-            this.CascadeToolStripMenuItem.Text = "&Cascade";
-            // 
-            // TileHorizontallyToolStripMenuItem
-            // 
-            this.TileHorizontallyToolStripMenuItem.Name = "TileHorizontallyToolStripMenuItem";
-            this.TileHorizontallyToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
-            this.TileHorizontallyToolStripMenuItem.Text = "Tile &Horizontally";
-            // 
-            // TileVerticallyToolStripMenuItem
-            // 
-            this.TileVerticallyToolStripMenuItem.Name = "TileVerticallyToolStripMenuItem";
-            this.TileVerticallyToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
-            this.TileVerticallyToolStripMenuItem.Text = "Tile &Vertically";
+            this.WindowToolStripMenuItem.DropDownOpening += new System.EventHandler(this.WindowToolStripMenuItem_DropDownOpening);
             // 
             // ToolStrip1
             // 
@@ -434,9 +410,6 @@
         internal System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
         internal System.Windows.Forms.ToolStripMenuItem SelectAllToolStripMenuItem;
         internal System.Windows.Forms.ToolStripMenuItem WindowToolStripMenuItem;
-        internal System.Windows.Forms.ToolStripMenuItem CascadeToolStripMenuItem;
-        internal System.Windows.Forms.ToolStripMenuItem TileHorizontallyToolStripMenuItem;
-        internal System.Windows.Forms.ToolStripMenuItem TileVerticallyToolStripMenuItem;
         internal System.Windows.Forms.ToolStrip ToolStrip1;
         internal System.Windows.Forms.ToolStripButton NewToolStripButton;
         internal System.Windows.Forms.ToolStripButton OpenToolStripButton;

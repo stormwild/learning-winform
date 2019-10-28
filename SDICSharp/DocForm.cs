@@ -29,5 +29,10 @@ namespace SDICSharp
             form.Show();
             return form;
         }
+
+        private void WindowToolStripMenuItem_DropDownOpening(object sender, EventArgs e)
+        {
+
+        }
     }
 }
