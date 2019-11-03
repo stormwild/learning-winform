@@ -139,6 +139,14 @@ The Application Framework is part of Visual Basic.
 
 We can still use this in C# by deriving from WindosFormsApplicationBase although without Visual Studio integration.
 
+### Explorer Style Applications
+
+- Often a good choice when working with hierarchical data
+- Don't get locked into using a list view on the right
+- User controls are more often a better choice
+
+File Explorer
+
 
 
 ## References
