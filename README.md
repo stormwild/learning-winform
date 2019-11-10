@@ -147,7 +147,40 @@ We can still use this in C# by deriving from WindosFormsApplicationBase although
 
 File Explorer
 
+## Data Binding
 
+- How data binding works
+- Simple data binding 
+- Complex data binding
+- Binding to objects
+- BindingSource
+
+Simple Data Binding
+
+- Bind one property of an object to one property of a control
+
+Complex Data Binding
+
+- Bind a collection of data to a control
+- Collection must implement ILst or IListSource
+
+Simple 
+
+```vb
+Dim product As New Product
+NameTextBox.DataBindings.Add("Text", product, "ProductName")
+PriceTextBox.DataBindins.Add("Text", product, "UnitPrice")
+DiscontinuedCheckBox.DataBindings.Add("Checked", product, "Discontinued")
+```
+
+Complex
+
+```
+Dim products As New List(Of Product)
+ProductListBox.DataSource = products
+ProductListBox.DisplayMember = "ProductName"
+ProductListBox.ValueMember = "ProductId"
+```
 
 ## References
 
