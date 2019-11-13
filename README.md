@@ -185,3 +185,4 @@ ProductListBox.ValueMember = "ProductId"
 ## References
 
 - [Introduction to Windows Forms](https://app.pluralsight.com/library/courses/windows-forms-introduction-with-visual-basic/table-of-contents)
+- [How to automate Word from Visual Basic .NET to create a new document](https://support.microsoft.com/en-ph/help/316383/how-to-automate-word-from-visual-basic-net-to-create-a-new-document)
